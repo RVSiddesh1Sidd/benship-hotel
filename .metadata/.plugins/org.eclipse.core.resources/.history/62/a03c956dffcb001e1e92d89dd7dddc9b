@@ -1,0 +1,5 @@
+package com.hotelbooking.request;
+
+public class LoginRequest {
+
+}

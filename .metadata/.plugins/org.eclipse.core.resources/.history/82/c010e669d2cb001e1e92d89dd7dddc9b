@@ -1,0 +1,52 @@
+package com.hotelbooking.service;
+
+import java.util.List;
+
+import com.hotelbooking.entity.Role;
+import com.hotelbooking.entity.User;
+
+public class RoleService implements IRoleService {
+
+	@Override
+	public List<Role> getRoles() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Role createRole(Role theRole) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteRole(Long id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Role findByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User removeUserFromRole(Long userId, Long roleId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User assignRoleToUser(Long userId, Long roleId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Role removeAllUserFromRole(Long roleId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

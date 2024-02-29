@@ -1,0 +1,5 @@
+package com.hotelbooking.security.jwt;
+
+public class JwtAuthEntryPoint {
+
+}

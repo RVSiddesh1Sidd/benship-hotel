@@ -1,0 +1,4 @@
+1707984296239	Rename package 'com.hotelbooking.Security'
+1707995109882	Rename type 'HotelSecurityConfig'
+1707996593352	Move compilation unit
+1708092992154	Rename type 'UserAlreadyExistException'

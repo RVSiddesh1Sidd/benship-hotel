@@ -1,0 +1,26 @@
+package com.hotelbooking.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.hotelbooking.entity.User;
+import com.hotelbooking.exception.UserAlreadyExistException;
+import com.hotelbooking.service.IUserService;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+public class AuthController {
+	private final IUserService userService;
+	
+	@PostMapping("/register-user")
+	public ResponseEntity<?> registerUser(User user){
+		try {
+			userService.registerUser(user);
+			return ResponseEntity.ok("Registration successful!");
+		} catch (UserAlreadyExistException e) {
+			return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
+		}
+	}
+}

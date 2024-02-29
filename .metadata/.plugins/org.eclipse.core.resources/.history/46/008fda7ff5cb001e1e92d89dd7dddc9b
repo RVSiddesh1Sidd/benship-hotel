@@ -1,0 +1,5 @@
+package com.hotelbooking.security.user;
+
+public class CorsConfig {
+
+}

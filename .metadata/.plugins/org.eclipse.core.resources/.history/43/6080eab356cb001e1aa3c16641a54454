@@ -1,0 +1,5 @@
+package com.hotelbooking.repository;
+
+public interface UserRepository {
+
+}
